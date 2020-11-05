@@ -1,0 +1,131 @@
+/* Styling Presedency:
+		Inline
+		ID
+		Class
+		Type
+*/
+
+/* CSS Selector:
+		a,b | Multiple Element selector
+		a b | Desendent Selectoer ->Apply css to Indented items to it's grand indent too.
+		a:b | Pseudoclass Selector
+	   a::b | Pseduoment Selector
+	  a > b | Child Selector -> Apply css to Indented items
+	  a + b | Adjecent sibling Selector
+	  [a=b] | Attribute Selector -> Apply specific csss to the attributes.
+*/
+
+
+h1{
+	color: blue;
+	text-align: center;
+}
+
+h3{
+	color: black;
+	text-align-last: : center;
+}
+h2{
+	color: pink;
+	text-decoration-color: rgba();
+}
+
+div{
+	background-color: green;
+	width: 100px/10;
+	height: 300px/10;
+	padding: 20px;	<!--Inside the border-->
+	margin: 20px;
+	font-family: Arial, sans-serif;  
+	font-size:20px;
+	font-weight: bold;
+	border: 3px solid red; 
+}
+
+table{
+	border: 4px solid green;
+	border-collapse: collapse;
+	padding: 2px;
+}
+
+/* Use of comma (,) in css to style the two other elements*/
+
+td{								
+	border: 1px solid black;
+	padding: 3px;
+}
+
+th{
+	border: 4px solid red;
+}
+
+#foo{					/* ID type css styling*/
+	color: orange;
+	text-align: center;
+}
+
+.uni{						/* class type css styling*/
+	color: violet;
+	text-align: center;
+}
+
+/*CSS Selectors*/
+
+ol > ul > li{
+	color: yellow;
+	padding: 3px;
+}
+
+a[href="https://google.com"]{
+	color: black;
+	padding: 3px;
+}
+
+button{
+	width: 200px;
+	height: 50px;
+	font-size:25px;
+	background-color: pink;
+}
+button:hover{
+	background-color: orange;
+}
+
+/*Media Queries
+
+@media (min-width: 600px){
+	body{
+		background-color: red;
+	}
+}
+@media (max-width: 599px){
+	body{
+		background-color: blue;
+	}
+}
+*/
+#Container{
+	display: flex;
+	flex-wrap: wrap;
+}
+#Container > div{
+	background-color: springgreen;
+	font-size: 20px;
+	margin: 30px;
+	padding: 20px;
+	width: 220px;
+}
+
+#grid{
+	background-color: yellow;
+	display: grid;
+	padding: 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	grid-template-columns: auto auto auto;
+}
+.grid-item{
+	background-color: white;
+	font-size: 20px;
+	padding: 20px;
+}

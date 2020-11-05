@@ -1,0 +1,33 @@
+$color: red;
+
+ul{
+	font-size: 14px;
+	color: $red;
+}
+
+/* THis is the SCSS class and this is used for the purpose of inheriting data to the child class.*/
+/* Signature "%" represents a parent class.*/
+/* Signature "." represents a child  class which inherited the properties of the parent class.*/
+
+TODO
+
+%message{
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	border: 2px;
+	border-color: black;
+	padding: 20px;
+	margin: 5px;
+}
+
+.sucess{
+	@extend %message;
+	background-color: green;
+
+}
+
+.error{
+	@extend %message
+	background-color: yellow;
+}
